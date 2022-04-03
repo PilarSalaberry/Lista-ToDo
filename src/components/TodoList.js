@@ -41,7 +41,7 @@ function TodoList() {
 
   return (
     <div>
-      <h1>Cosas para hacer:</h1>
+      <h1>Para hacer:</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
