@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function TodoForm(props) {
+function Form(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
   const inputRef = useRef(null);
@@ -45,6 +45,7 @@ function TodoForm(props) {
           <input
             placeholder="Agrear a la lista"
             value={input}
+            required
             onChange={handleChange}
             name="text"
             className="todo-input"
@@ -59,4 +60,4 @@ function TodoForm(props) {
   );
 }
 
-export default TodoForm;
+export default Form;
